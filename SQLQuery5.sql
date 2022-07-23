@@ -29,3 +29,8 @@ SELECT * FROM ADDRESS_BOOK_SERVICE;
 -----Editing Details Using Name----------
 UPDATE ADDRESS_BOOK_SERVICE SET Phone='7002285211' WHERE FirstName='Priya';
 SELECT * FROM ADDRESS_BOOK_SERVICE;
+
+-------UC5--------------
+-------Deleating a person using name---------
+DELETE FROM ADDRESS_BOOK_SERVICE WHERE FirstName= 'snehal';
+SELECT * FROM ADDRESS_BOOK_SERVICE;
