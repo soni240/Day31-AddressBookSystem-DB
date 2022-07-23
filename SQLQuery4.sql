@@ -1,4 +1,3 @@
-
 ------UC1-------
 CREATE DATABASE ADDRESS_BOOK_SERVICE;
 USE ADDRESSBOOK;
@@ -24,4 +23,9 @@ INSERT INTO ADDRESS_BOOK_SERVICE VALUES('Ansh','Patil','Mumbai','Maharashtra','5
 INSERT INTO ADDRESS_BOOK_SERVICE VALUES('Aryansh','Patil','Pune','Maharashtra','8375','763784','aryansh@gmail.com');
 INSERT INTO ADDRESS_BOOK_SERVICE VALUES('snehal','sonwane','nashik','Maharashtra','574895','09384903','snaehal@gmail.com');
 INSERT INTO ADDRESS_BOOK_SERVICE VALUES('Priyanka','sonawane','hyderabad','Telangana','455454','09384903','priyanka@gmail.com');
+SELECT * FROM ADDRESS_BOOK_SERVICE;
+
+----------------UC4--------------
+-----Editing Details Using Name----------
+UPDATE ADDRESS_BOOK_SERVICE SET Phone='7002285211' WHERE FirstName='Priya';
 SELECT * FROM ADDRESS_BOOK_SERVICE;
