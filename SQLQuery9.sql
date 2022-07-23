@@ -48,3 +48,10 @@ Select COUNT(StateName) as State_Count FROM ADDRESS_BOOK_SERVICE;
 ----------------UC8--------------
 -----------Sorting data Alphabetically by person name------------
 SELECT * FROM ADDRESS_BOOK_SERVICE ORDER BY(FirstName);
+
+-----------UC9-----
+----------Ability to identify each Address Book with name and Type---------
+alter table ADDRESS_BOOK_SERVICE  add addressBook_Name varchar(30),addressBook_Type varchar(30);
+update ADDRESS_BOOK_SERVICE set addressBook_Name = 'family address book', addressBook_Type = 'Family' where FirstName='Ankita';
+update ADDRESS_BOOK_SERVICE set addressBook_Name = 'friends address book', addressBook_Type = 'Friends' where FirstName='sanket';
+select * from ADDRESS_BOOK_SERVICE;
