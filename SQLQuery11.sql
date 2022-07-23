@@ -59,3 +59,9 @@ select * from ADDRESS_BOOK_SERVICE;
 ------uc10-------
 ---------Ability to get number of contact persons using count type----------
 select count(addressBook_Type) from ADDRESS_BOOK_SERVICE where addressBook_Type = 'Family';
+
+-----UC11-------
+-----------Ability to add person to both Friend and Family-------
+INSERT INTO ADDRESS_BOOK_SERVICE VALUES('Snehal','Patil','pune','Maharashtra','412109','845784','snehalp@gmail.com','friends address book','Friends');
+INSERT INTO ADDRESS_BOOK_SERVICE VALUES('Pallavi','Khaire','Mumbai','Maharashtra','560085','454645','pallu@gmail.com',' address book','Family');
+select * from ADDRESS_BOOK_SERVICE;
